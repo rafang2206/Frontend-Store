@@ -231,6 +231,30 @@ img {
     margin: 0;
 }
 
+@media (max-width: 768px){
+    .camisa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        
+    }
+
+    .camisa img{
+        max-width: 70%;
+    }
+
+    .camisa_contenido{
+        width: 95%;
+    }
+
+    .camisa_contenido p{
+        font-size: 1.3rem;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 768px){
     .camisa{
         display: grid;
@@ -255,6 +279,7 @@ img {
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
+    
 }
 .formulario__submit{
     background-color: var(--secundary);
@@ -271,6 +296,29 @@ img {
 
 .option{
     color: black;
+}
+
+@media (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+    .formulario{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        
+    }
+
+    .formulario__campo{
+        padding: 0;
+        min-width: 80%;
+    }
+
+    .formulario__submit{
+        min-width: 80%;
+    }
+
 }
 
 
@@ -299,12 +347,18 @@ main{
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     background-color: rgba(0,0,0,.8);
     display: grid;
     place-items: center;
+    justify-content: center;
 }
+
+.compra-producto h1{
+    margin: 0
+}
+
 
 .btn-cerrar{
     width: 4rem;
@@ -317,3 +371,4 @@ main{
     font-weight: 900;
     cursor: pointer;
 }
+
